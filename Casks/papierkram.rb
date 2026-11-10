@@ -3,25 +3,25 @@ cask "papierkram" do
   binary "papierkram", target: "pk"
   fish_completion "completions/papierkram.fish", target: "pk.fish"
 
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     on_arm do
-      sha256 "160d2c3dc3422adde2744bad34fd734974a0482723c0a2e126215d2d3f841d81"
+      sha256 "5f0a6cc0bcb8a097217e33fe0a0cfd399fb789dd6b8e7ff34f377e28f7ad087a"
       url "https://github.com/Padrio/papierkram-cli/releases/download/v#{version}/papierkram_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "660d38e971d89d2c4c7ac6dae67f53a4a1ff517a0f8cb76b3023d80b86344ebf"
+      sha256 "d65298f5a8c98ed09d384ea24d7eff1cb63f9080567e0d42d0240f8c1bb584b8"
       url "https://github.com/Padrio/papierkram-cli/releases/download/v#{version}/papierkram_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "53194bf60cbac73bb7cd901ae451a12d056f5480a9a9d7dec714742ea6b55024"
+      sha256 "3ee40926bba62d572d874fff3cf967fb10dfb07c7892c2ecd362fdb303d59258"
       url "https://github.com/Padrio/papierkram-cli/releases/download/v#{version}/papierkram_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "b8c2222c101e0d113f965a67d03453666555c24cdbdaa15d2391a545979a22cf"
+      sha256 "95e71544c0a3de9f1f6fc01e3fe9ec478743158ab9e31a15ccae99710f4a11ae"
       url "https://github.com/Padrio/papierkram-cli/releases/download/v#{version}/papierkram_#{version}_linux_amd64.tar.gz"
     end
   end
@@ -87,6 +87,7 @@ cask "papierkram" do
   manpage "man/papierkram-invoice-deliver.1"
   manpage "man/papierkram-invoice-describe.1"
   manpage "man/papierkram-invoice-list.1"
+  manpage "man/papierkram-invoice-paid-status.1"
   manpage "man/papierkram-invoice-pdf.1"
   manpage "man/papierkram-invoice-unarchive.1"
   manpage "man/papierkram-invoice-update.1"
@@ -94,6 +95,8 @@ cask "papierkram" do
   manpage "man/papierkram-local-init.1"
   manpage "man/papierkram-local-show.1"
   manpage "man/papierkram-local.1"
+  manpage "man/papierkram-mcp-serve.1"
+  manpage "man/papierkram-mcp.1"
   manpage "man/papierkram-payment-term-describe.1"
   manpage "man/papierkram-payment-term-list.1"
   manpage "man/papierkram-payment-term.1"
